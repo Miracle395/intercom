@@ -17,7 +17,7 @@ It includes setup steps, required runtime, first‑run decisions, and operationa
 
 ## Awesome Intercom
 
-For a curated lists of agentic Intercom apps check out: https://github.com/Trac-Systems/awesome-intercom
+For a curated list of agentic Intercom apps check out: https://github.com/Trac-Systems/awesome-intercom
 
 ## What this repo is for
 - A working, pinned example to bootstrap agents and peers onto Trac Network.
