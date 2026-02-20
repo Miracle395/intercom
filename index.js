@@ -14,6 +14,7 @@ import SampleContract from './contract/contract.js';
 import { Timer } from './features/timer/index.js';
 import Sidechannel from './features/sidechannel/index.js';
 import ScBridge from './features/sc-bridge/index.js';
+import Sentinel from './features/sentinel/index.js';
 
 const { env, storeLabel, flags } = getPearRuntime();
 
@@ -451,6 +452,11 @@ if (admin && admin.value === peer.wallet.publicKey && peer.base.writable) {
   await peer.protocol.instance.addFeature('timer', timer);
   timer.start().catch((err) => console.error('Timer feature stopped:', err?.message ?? err));
 }
+
+// Start Sentinel Feature
+const sentinel = new Sentinel(peer, { timeout: 60000 });
+await peer.protocol.instance.addFeature('sentinel', sentinel);
+sentinel.start();
 
 let scBridge = null;
 if (scBridgeEnabled) {
