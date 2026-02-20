@@ -37,6 +37,10 @@ No external dependencies.
 Fully integrated into runtime.
 
 
+# Trac Address 💰
+
+trac1vfv5q5alf7xcs406vmm5c0k5xe3t23c9asx8ykumq63zp4pes5jsxcdz4f
+
 
 ## Feature Integration
 
@@ -48,6 +52,4 @@ await peer.protocol.instance.addFeature('sentinel', sentinel);
 sentinel.start();
 
 
-# Trac Address 💰
 
-trac1vfv5q5alf7xcs406vmm5c0k5xe3t23c9asx8ykumq63zp4pes5jsxcdz4f
