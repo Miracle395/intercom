@@ -52,4 +52,19 @@ await peer.protocol.instance.addFeature('sentinel', sentinel);
 sentinel.start();
 
 
+## Proof of Execution
+
+Tested in Android (Termux ARM64).
+
+Dependencies installed successfully.
+
+Runtime initializes and reaches native RocksDB binding stage.
+
+Screenshots:
+
+![Install Success](Screenshot_20260220-185655.png)
+![Runtime Attempt](Screenshot_20260220-185705.png)
+![Termux Output](Screenshot_20260220-185724.png)
+
+
 
