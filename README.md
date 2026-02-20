@@ -42,16 +42,6 @@ Fully integrated into runtime.
 trac1vfv5q5alf7xcs406vmm5c0k5xe3t23c9asx8ykumq63zp4pes5jsxcdz4f
 
 
-## Feature Integration
-
-Sentinel is registered as a protocol feature:
-
-```js
-const sentinel = new Sentinel(peer, { timeout: 60000 });
-await peer.protocol.instance.addFeature('sentinel', sentinel);
-sentinel.start();
-
-
 ## Proof of Execution
 
 Tested in Android (Termux ARM64).
@@ -68,3 +58,14 @@ Screenshots:
 
 
 
+
+
+
+## Feature Integration
+
+Sentinel is registered as a protocol feature:
+
+```js
+const sentinel = new Sentinel(peer, { timeout: 60000 });
+await peer.protocol.instance.addFeature('sentinel', sentinel);
+sentinel.start();
